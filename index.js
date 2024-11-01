@@ -4,7 +4,7 @@ let sqlite3 = require('sqlite3').verbose();
 let { open } = require('sqlite');
 
 let app = express();
-let port = process.env.port || 3000;
+let port = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
